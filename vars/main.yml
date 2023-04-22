@@ -1,2 +1,8 @@
 ---
-# vars file for /etc/ansible/roles/custom-nginx
+custom_heading: "Welcome To DevOps B28 Batch Training By Sreeharsha Veerapalli"
+todays_date: "{{ ansible_facts['date_time']['date'] }}"
+host_name: "{{ ansible_facts['hostname'] }}"
+fqdn_name: "{{ ansible_facts['fqdn'] }}"
+os_family: "{{ ansible_facts['distribution'] }}"
+os_dest: "{{ ansible_facts['distribution_version'] }}"
+ipaddress: "{{ ansible_facts['eth0']['ipv4']['address'] }}"

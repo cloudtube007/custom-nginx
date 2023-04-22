@@ -1,2 +1,3 @@
 ---
-# handlers file for /etc/ansible/roles/custom-nginx
+- name: restart nginx
+  command: service nginx restart
